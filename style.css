@@ -2,3 +2,44 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.sidebar    {
+    background-color: cornflowerblue;
+    width: 250px;
+}
+.title-box  {
+    color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.title-logo {
+    filter: invert(100%);
+    width: 50px;
+}
+.menu   {
+    padding: 50px;
+    color: white;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 35px 100px;
+}
+.menu-item  {
+    padding: 15px;
+}
+.menu-icon  {
+    filter: invert(100%);
+    width: 35px;
+}
+.header {
+
+}
+.main-content   {
+
+}
