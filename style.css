@@ -42,6 +42,37 @@ body {
 .header {
 
 }
+.header-top {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px 35px auto;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 40px;
+}
+.header-top > div:nth-child(3)  {
+    margin-left: auto;
+}
+#SearchBar {
+    width: 100%;
+    max-width: 400px;         /* Keeps it from stretching too far */
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 20px;
+    height: 32px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.header-bottom   {
+
+}
+.header-top img {
+    filter: invert(10%);
+    width: 35px;
+}
+.header-top p   {
+    font-weight: bold;
+}
 .main-content   {
 
 }
