@@ -17,17 +17,19 @@ body {
     color:white;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 .title-logo {
     filter: invert(100%);
-    width: 50px;
+    width: 35px;
 }
 .menu   {
-    padding: 50px;
+    padding: 30px;
     color: white;
-    align-items: center;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 35px 100px;
 }
 .menu-item  {
