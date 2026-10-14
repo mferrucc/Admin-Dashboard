@@ -39,40 +39,111 @@ body {
     filter: invert(100%);
     width: 35px;
 }
-.header {
-
-}
 .header-top {
-    display: grid;
-    grid-template-columns: 30px 1fr 30px 35px auto;
+    display: grid;    
+    grid-template-columns: 60% 40%;
     align-items: center;
-    gap: 20px;
-    padding: 15px 40px;
 }
-.header-top > div:nth-child(3)  {
-    margin-left: auto;
+.header-top-left {
+    display: grid;
+    grid-template-columns: 25px 425px;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
-#SearchBar {
+
+.header-top-right {
+    display: grid;
+    grid-template-columns: 75px 45px auto;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.header-top-left img {
+    filter: invert(10%);
+    width: 25px;
+    margin-left: 10px;
+}
+.header-top-right img{
+    filter: invert(10%);
+    width: 25px;
+    margin-left: 10px;
+}
+.header-top-right p   {
+    font-weight: bold;
+}
+#searchBar {
     width: 100%;
-    max-width: 400px;         /* Keeps it from stretching too far */
     background-color: #e2e8f0;
     border: none;
     border-radius: 20px;
-    height: 32px;
-    padding: 0 15px;
+    height: 30px;
+    padding:10px 5px;
     outline: none;
 }
 
 .header-bottom   {
+    display: grid;
+    grid-template-columns: 75px 6fr 3fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
 
 }
-.header-top img {
-    filter: invert(10%);
-    width: 35px;
-}
-.header-top p   {
+.header-bottom p    {
     font-weight: bold;
 }
-.main-content   {
+.header-bottom img {
+    filter: invert(10%);
+    width: 65px;
+}
 
+.header-bottom button   {
+    background-color: cornflowerblue;
+    border: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-content   {
+    display: flex;
+    flex-direction: column;
+}
+.content    {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.content-left   {
+    display: flex;
+    flex-direction: column;
+    color: darkslateblue;
+}
+.content-right  {
+    color: darkslateblue;
+    display: grid;
+    grid-template-rows: 200px 100px;
+}
+.project-box    {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: black;
+}
+.project-card   {
+    border: 1px solid darkgrey;
+    box-shadow: 2px darkgrey;
+}
+.announcement-card   {
+    color: black;
+    font-size: small;
+}
+.trending-card    {
+    color: black;
+    font-size: small;
 }
