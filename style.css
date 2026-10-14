@@ -1,7 +1,8 @@
-*   {
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -9,22 +10,26 @@ body {
     width: 100vw;
     overflow: hidden;
 }
-.sidebar    {
+
+.sidebar {
     background-color: cornflowerblue;
     width: 250px;
 }
-.title-box  {
-    color:white;
+
+.title-box {
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 20px;
 }
+
 .title-logo {
     filter: invert(100%);
     width: 35px;
 }
-.menu   {
+
+.menu {
     padding: 30px;
     color: white;
     display: grid;
@@ -32,18 +37,24 @@ body {
     align-items: center;
     grid-template-columns: 35px 100px;
 }
-.menu-item  {
+
+.menu-item {
     padding: 15px;
 }
-.menu-icon  {
+
+.menu-icon {
     filter: invert(100%);
     width: 35px;
 }
+.header  {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
 .header-top {
-    display: grid;    
+    display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
 }
+
 .header-top-left {
     display: grid;
     grid-template-columns: 25px 425px;
@@ -68,25 +79,29 @@ body {
     width: 25px;
     margin-left: 10px;
 }
-.header-top-right img{
+
+.header-top-right img {
     filter: invert(10%);
     width: 25px;
     margin-left: 10px;
 }
-.header-top-right p   {
+
+.header-top-right p {
     font-weight: bold;
 }
+
 #searchBar {
     width: 100%;
     background-color: #e2e8f0;
     border: none;
     border-radius: 20px;
     height: 30px;
-    padding:10px 5px;
+    padding: 10px 5px;
+    margin-left: 10px;
     outline: none;
 }
 
-.header-bottom   {
+.header-bottom {
     display: grid;
     grid-template-columns: 75px 6fr 3fr;
     align-items: center;
@@ -95,15 +110,17 @@ body {
     padding: 0 20px;
 
 }
-.header-bottom p    {
+
+.header-bottom p {
     font-weight: bold;
 }
+
 .header-bottom img {
     filter: invert(10%);
     width: 65px;
 }
 
-.header-bottom button   {
+.header-bottom button {
     background-color: cornflowerblue;
     border: 1px;
     border-radius: 10px;
@@ -112,38 +129,96 @@ body {
     cursor: pointer;
 }
 
-.main-content   {
+.main-content {
     display: flex;
     flex-direction: column;
 }
-.content    {
+
+.content {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 8fr 2fr;
+    padding: 10px;
+    background-color: rgba(30, 30, 250, 0.05);
 }
-.content-left   {
+
+.content-left {
     display: flex;
     flex-direction: column;
     color: darkslateblue;
+    padding: 10px;
 }
-.content-right  {
+
+.content-right {
     color: darkslateblue;
     display: grid;
-    grid-template-rows: 200px 100px;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
 }
-.project-box    {
+
+.project-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: black;
+    gap: 10px;
+    padding-top: 10px;
 }
-.project-card   {
-    border: 1px solid darkgrey;
-    box-shadow: 2px darkgrey;
-}
-.announcement-card   {
-    color: black;
+
+.project-card {
+    outline:none;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #f59e0b;
+    border-radius: 12px;
     font-size: small;
 }
-.trending-card    {
+
+.project-card img   {
+    width: 20px;
+    filter: invert(20%);
+    padding: 3px;
+}
+.project-card-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.announcement-box   {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.announcement-card {
     color: black;
     font-size: small;
+    display: flex;
+    flex-direction: column;
+}
+.announcement-card-title    {
+    font-weight: bold;
+}
+.trending-box   {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding-top: 20px;
+}
+.trending-card {
+    color: black;
+    font-size: small;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.trending-card img  {
+    width: 25px;
+    filter: invert(20%);
+    padding: 3px;
+}
+.trending-card-username    {
+    font-weight: bold;
 }
